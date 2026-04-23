@@ -6,7 +6,7 @@ from selenium import webdriver
 
 class TestBasicLogin:
 
-    @pytest.mark.sanity
+    @pytest.mark.basic
     def test_genericTest(self):
 
         self.driver = webdriver.Chrome()
