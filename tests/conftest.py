@@ -15,8 +15,9 @@ def setup(browser):
     else:
         driver = webdriver.Firefox()
 
-    return driver
-
+    # return driver
+    yield driver
+    driver.quit()
 def pytest_addoption(parser):
     parser.addoption("--browser")
 
